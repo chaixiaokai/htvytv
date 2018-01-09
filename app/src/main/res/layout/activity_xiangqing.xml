@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_blue"
+    tools:context="com.example.lithography.activity.WelComeActivity">
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:gravity="center"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+
+    <tv.danmaku.ijk.media.widget.media.IjkVideoView
+        android:id="@+id/ijkplay"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </tv.danmaku.ijk.media.widget.media.IjkVideoView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv1"
+            android:text="简介"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv2"
+            android:text="评论"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

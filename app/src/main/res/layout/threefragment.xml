@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blue"
+    android:orientation="vertical">
+    <TextView
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="#ff00"
+        android:text="发现"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <com.stone.card.library.CardSlidePanel
+        android:id="@+id/image_slide_panel"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        card:bottomMarginTop="38dp"
+        card:itemMarginTop="10dp"
+        card:yOffsetStep="13dp">
+    </com.stone.card.library.CardSlidePanel>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="换一批"
+        android:textSize="17dp"
+        android:textColor="#f00"/>
+
+</LinearLayout>

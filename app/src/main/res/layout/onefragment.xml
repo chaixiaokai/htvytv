@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<com.example.lithography.activity.AlphaTitleScrollView
+    android:id="@+id/als"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.youth.banner.Banner
+        android:id="@+id/ban"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </com.youth.banner.Banner>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_below="@id/ban"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</com.example.lithography.activity.AlphaTitleScrollView>
+
+    <RelativeLayout
+        android:background="#f00"
+        android:id="@+id/re"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="精选"/>
+    </RelativeLayout>
+
+</RelativeLayout>
